@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DV Flight Club 26</title>
+<meta charset="UTF-8">
+<title>DV Flight Club 26</title>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-right: 40px;
+  }
+
+  .logo img {
+    max-height: 120px;
+  }
+
+  .info h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .info p {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .info a {
+    color: blue;
+    text-decoration: underline;
+  }
+</style>
 </head>
-<body style="margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; background:white;">
-  <img src="./logo.png" alt="DV Flight Club 26 Logo" style="max-width:300px; width:100%; height:auto;">
+
+<body>
+
+<div class="container">
+  
+  <!-- Logo -->
+  <div class="logo">
+    <img src="logo.png" alt="DV Flight Club 26">
+  </div>
+
+  <!-- Text rechts -->
+  <div class="info">
+    <h1>DV Flight Club 26 Längenfeld</h1>
+    <p>Unterried xx, 6444 Längenfeld</p>
+    <p><a href="mailto:info@dvflightclub26.at">info@dvflightclub26.at</a></p>
+    <p>+43 650 5746007</p>
+  </div>
+
+</div>
+
 </body>
 </html>
