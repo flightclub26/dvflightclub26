@@ -2,39 +2,59 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>DV Flight Club 26</title>
 
 <style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
   .container {
     display: flex;
     align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    justify-content: center;
+    gap: 40px;
     padding: 20px;
-  }
-
-  .logo {
-    margin-right: 40px;
+    flex-wrap: wrap; /* wichtig für Umbruch */
+    background-color: #f5f5f5;
   }
 
   .logo img {
-    max-height: 120px;
+    width: 100%;
+    max-width: 250px; /* skaliert automatisch */
+    height: auto;
+  }
+
+  .info {
+    max-width: 500px;
   }
 
   .info h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: clamp(20px, 3vw, 28px); /* dynamische Schriftgröße */
     font-weight: bold;
   }
 
   .info p {
-    margin: 5px 0;
-    font-size: 18px;
+    margin: 6px 0;
+    font-size: clamp(14px, 2vw, 18px);
   }
 
   .info a {
     color: blue;
     text-decoration: underline;
+  }
+
+  /* Mobile Optimierung */
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
   }
 </style>
 </head>
@@ -42,13 +62,11 @@
 <body>
 
 <div class="container">
-  
-  <!-- Logo -->
+
   <div class="logo">
     <img src="logo.png" alt="DV Flight Club 26">
   </div>
 
-  <!-- Text rechts -->
   <div class="info">
     <h1>DV Flight Club 26 Längenfeld</h1>
     <p>Unterried xx, 6444 Längenfeld</p>
